@@ -5,4 +5,4 @@
 
 **Quicksort**
 
-![alt tag](https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png)
+![alt tag](https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png =500x500)
