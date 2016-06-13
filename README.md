@@ -13,4 +13,4 @@
 	Single Pivot Quicksort - nlog(n) runtime.
 	- Determines pivot using Median of 3.
 
-<img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="600" height="400" />
+<img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="500" height="400" />
