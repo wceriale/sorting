@@ -1,7 +1,7 @@
-h1 Sorting Algorithms
-** Mergesort
+# Sorting Algorithms
+**Mergesort**
 
-** Heapsort
+**Heapsort**
 
-** Quicksort
+**Quicksort**
 ![alt tag](https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png) 
