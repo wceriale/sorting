@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class SortingTests {
-	public static final int ARR_SIZE = 150;
+	public static final int ARR_SIZE = 10;
 
 	public static void main(String[] args) {
 		Integer[] arr = new Integer[ARR_SIZE];
@@ -13,26 +13,29 @@ public class SortingTests {
 			arr2[i] = random;
 			arr3[i] = random; 
 		}
-		
+				System.out.println(Arrays.toString(arr));
+
 		long timeBeforeSort2 = System.currentTimeMillis();
-		QuickSort.sort(arr3);
+		MergeSort.sort(arr);
 		long timeAfterSort2 = System.currentTimeMillis();
-		System.out.println("QuickSort took " + (timeAfterSort2 - timeBeforeSort2) + "ms");
+				System.out.println(Arrays.toString(arr));
 
-		System.out.println();
-		System.out.println();
+		System.out.println("MergeSort took " + (timeAfterSort2 - timeBeforeSort2) + "ms");
 
-		long timeBeforeSort1 = System.currentTimeMillis();
-		HeapSort.sort(arr2);
-		long timeAfterSort1 = System.currentTimeMillis();
-		System.out.println("HeapSort took" + (timeAfterSort1 - timeBeforeSort1) + " ms");
+		// System.out.println();
+		// System.out.println();
 
-		System.out.println();
-		System.out.println();
+		// long timeBeforeSort1 = System.currentTimeMillis();
+		// HeapSort.sort(arr2);
+		// long timeAfterSort1 = System.currentTimeMillis();
+		// System.out.println("HeapSort took" + (timeAfterSort1 - timeBeforeSort1) + " ms");
 
-		long timeBeforeSort = System.currentTimeMillis();
-		QuickSort.sort(arr);
-		long timeAfterSort = System.currentTimeMillis();
-		System.out.println("QuickSort took " + (timeAfterSort - timeBeforeSort) + "ms");
+		// System.out.println();
+		// System.out.println();
+
+		// long timeBeforeSort = System.currentTimeMillis();
+		// QuickSort.sort(arr);
+		// long timeAfterSort = System.currentTimeMillis();
+		// System.out.println("QuickSort took " + (timeAfterSort - timeBeforeSort) + "ms");
 	}
 }
