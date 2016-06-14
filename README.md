@@ -1,7 +1,7 @@
 # Sorting Algorithms
 ##Mergesort
 
-<img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Mergesort.gif" width="550" height="400" />
+<img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Mergesort.gif" width="550" height="300" />
 
 
 ##Heapsort
@@ -16,4 +16,4 @@
 	Single Pivot Quicksort - nlog(n) runtime.
 	- Determines pivot using Median of 3.
 
-<img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="550" height="400" />
+<img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="550" height="300" />
