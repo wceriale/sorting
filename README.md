@@ -22,8 +22,8 @@
 ##Quicksort
 	Single Pivot Quicksort
 	Average runtime: nlog(n)
-	Worst case:      n<sup>2</sup>
+	Worst case:      n
+<sup>2</sup>
 	Memory:			 1
 	- Determines pivot using Median of 3.
-
 <img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="550" height="300" />
