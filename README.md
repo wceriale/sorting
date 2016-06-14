@@ -1,5 +1,5 @@
 # Sorting Algorithms
-##Mergesort
+Mergesort
 	Basic MergeSort
 	Average runtime: nlog(n)
 	Worst case:      nlog(n)
@@ -8,7 +8,7 @@
 <img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Mergesort.gif" width="550" height="300" />
 
 
-##Heapsort
+Heapsort
 	In place Heap Sort
 	Average runtime: nlog(n)
 	Worst case:      nlog(n)
@@ -19,11 +19,10 @@
 
 
 
-##Quicksort
+Quicksort
 	Single Pivot Quicksort
 	Average runtime: nlog(n)
-	Worst case:      n
-<sup>2</sup>
+	Worst case:      n<sup>2</sup>
 	Memory:			 1
 	- Determines pivot using Median of 3.
 <img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="550" height="300" />
