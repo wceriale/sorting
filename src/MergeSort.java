@@ -1,3 +1,5 @@
+// William Ceriale
+
 import java.util.Comparator;
 
 public class MergeSort {
