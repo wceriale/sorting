@@ -1,0 +1,48 @@
+Test 4. Ran with SeqCutoff of 10000
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+ParallelQuickSort sort used
+Array is sorted: true
+ParallelQuickSort took 2362ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+QuickSort sort used
+Array is sorted: true
+QuickSort took 4243ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+MergeSort sort used
+Test 4. Ran with SeqCutoff of 10000
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+ParallelQuickSort sort used
+Array is sorted: true
+ParallelQuickSort took 2658ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+QuickSort sort used
+Array is sorted: true
+QuickSort took 4672ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+MergeSort sort used
+Array is sorted: true
+MergeSort took 13679ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+HeapSort sort used
+Array is sorted: true
+HeapSort took 17013ms
+

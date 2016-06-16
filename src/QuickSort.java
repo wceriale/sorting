@@ -1,9 +1,9 @@
 /*
-Sequential QuickSort implemention using median of 3
-to determine pivot.
+Sequential QuickSort implemention using median largest
+index as pivot
 
 -------------------------------------
- lo | unsorted elements | pivot| hi |
+ < pivot |    pivot       | > pivot |
 -------------------------------------
 
 */
@@ -32,43 +32,41 @@ public class QuickSort {
             if(high - low == 1) {
                 if(comparator.compare(arr[low], arr[high]) > 0)
                     swap(arr, low, high);
-            } else if(low < high) {
-                medianOf3(arr, low, high);
-                
-                int pivotIndex = partition(arr, low + 1, high - 1);
+            } else if(low < high) {                
+                int pivotIndex = partition(arr, low, high);
                 quicksort(arr, low, pivotIndex - 1);
                 quicksort(arr, pivotIndex + 1, high);     
             }
     }
     
     // puts smallest value on the left, places pivot and greatest farthest to the right
-    @SuppressWarnings("unchecked")
-    private static <E> void medianOf3(E[] arr, int low, int high) {
-        int middle = (high  + low)/2;
-        E hi = arr[high];
-        E lo = arr[low];
-        E mid = arr[middle];
+    // @SuppressWarnings("unchecked")
+    // private static <E> void medianOf3(E[] arr, int low, int high) {
+    //     int middle = (high  + low)/2;
+    //     E hi = arr[high];
+    //     E lo = arr[low];
+    //     E mid = arr[middle];
         
         
 
-        if(comparator.compare(hi, lo) > 0) {       // hi > lo
-           if(comparator.compare(lo, mid) > 0) {   // hi > lo > mid
-               swap(arr, low, middle);
-           } else if(comparator.compare(mid, hi) > 0) {  // mid > hi > lo
-               swap(arr, middle, high);
-           }
-        } else {                                  // lo > hi
-            if(comparator.compare(hi, mid) > 0) { // lo > hi > mid
-                swap(arr, low, high);
-                swap(arr, low, middle);
-            } else {                         // lo > mid > hi
-                swap(arr, low, high);
-            }
-        }
+    //     if(comparator.compare(hi, lo) > 0) {       // hi > lo
+    //        if(comparator.compare(lo, mid) > 0) {   // hi > lo > mid
+    //            swap(arr, low, middle);
+    //        } else if(comparator.compare(mid, hi) > 0) {  // mid > hi > lo
+    //            swap(arr, middle, high);
+    //        }
+    //     } else {                                  // lo > hi
+    //         if(comparator.compare(hi, mid) > 0) { // lo > hi > mid
+    //             swap(arr, low, high);
+    //             swap(arr, low, middle);
+    //         } else {                         // lo > mid > hi
+    //             swap(arr, low, high);
+    //         }
+    //     }
         
-        swap(arr, middle, high - 1); 
+    //     swap(arr, middle, high - 1); 
         
-    }
+    // }
 
     @SuppressWarnings("unchecked")
     private static <E> int partition(E[] arr, int low, int high) {

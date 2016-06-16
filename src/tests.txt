@@ -1,0 +1,29 @@
+Test 1. Ran with SeqCutoff of 1 (Fully Parallel)
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+ParallelQuickSort sort used
+Array is sorted: true
+ParallelQuickSort took 12968ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+QuickSort sort used
+Array is sorted: true
+QuickSort took 3988ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+MergeSort sort used
+Array is sorted: true
+MergeSort took 10496ms
+
+
+Sorting Array of 30000000 elements
+Array is sorted: false
+HeapSort sort used
+Array is sorted: true
+HeapSort took 14669ms
+
