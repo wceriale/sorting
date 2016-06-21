@@ -4,54 +4,6 @@ Sorting Array of 30000000 elements
 Array is sorted: false
 ParallelQuickSort sort used
 Array is sorted: true
-ParallelQuickSort took 13648ms
-
-
-Sorting Array of 30000000 elements
-Array is sorted: false
-QuickSort sort used
-Array is sorted: true
-QuickSort took 4374ms
-
-
-Sorting Array of 30000000 elements
-Array is sorted: false
-MergeSort sort used
-Array is sorted: true
-MergeSort took 11330ms
-
-
-Sorting Array of 30000000 elements
-Array is sorted: false
-HeapSort sort used
-Array is sorted: true
-HeapSort took 15030ms
-
-Test 2. Ran with SeqCutoff of 500
-
-Sorting Array of 30000000 elements
-Array is sorted: false
-ParallelQuickSort sort used
-Array is sorted: true
-ParallelQuickSort took 2504ms
-
-
-Sorting Array of 30000000 elements
-Array is sorted: false
-QuickSort sort used
-Array is sorted: true
-QuickSort took 4065ms
-
-
-Sorting Array of 30000000 elements
-Array is sorted: false
-MergeSort sort used
-Test 2. Ran with SeqCutoff of 500
-
-Sorting Array of 30000000 elements
-Array is sorted: false
-ParallelQuickSort sort used
-Array is sorted: true
 ParallelQuickSort took 2627ms
 
 

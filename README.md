@@ -24,5 +24,5 @@
 	Average runtime: nlog(n)
 	Worst case:      n²
 	Memory:			 1
-	- Determines pivot using Median of 3.
+	- Uses last element in array as pivot
 <img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="550" height="300" />
