@@ -1,34 +1,42 @@
 /*
-Parallel Quicksort using Random Pivot Point selection
-
-  sorted in parallel    sorted in parallel
-       ^                   ^
--------------------------------------
- lo | < pivot | pivot| > pivot | hi |
--------------------------------------
-
-
+Parallel QuickSort.
+After the pivot is placed in the correct 
+position, sorts both sides at the same time
+in parallel. 
+When there are 5,000 elements, it switches to
+sorting it sequentially
 */
 
 import java.util.Comparator;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveAction;
 
-public class ParallelQuickSort {
+public class QuickSort {
     @SuppressWarnings("rawtypes")
     static Comparator comparator;
     static final ForkJoinPool POOL = new ForkJoinPool();
     static final int SeqCutOff = 10000;
         
-    public static <E extends Comparable<E>> void sort(E[] array) {
-        ParallelQuickSort.sort(array, (x, y) -> x.compareTo(y));
+    public static <E extends Comparable<E>> void parallelSort(E[] array) {
+        QuickSort.paralllelSort(array, (x, y) -> x.compareTo(y));
     }
 
-    public static <E> void sort(E[] array, Comparator<E> compare) {
+    public static <E> void parallelSort(E[] array, Comparator<E> compare) {
         comparator = compare;
         POOL.invoke(new ParallelSort(array, 0, array.length));
         // quicksort(array, 0, array.length - 1);
     }
+
+    public static <E extends Comparable<E>> void sort(E[] array) {
+        QuickSort.sort(array, (x, y) -> x.compareTo(y));
+    }
+
+    public static <E> void sort(E[] array, Comparator<E> compare) {
+        comparator = compare;
+        quicksort(array, 0, array.length - 1);
+    }
+
+
 
     private static <E> void quicksort(E[] arr, int low, int high) {
         

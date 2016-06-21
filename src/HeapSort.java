@@ -39,7 +39,6 @@ public class HeapSort {
     	int hole = i;     	
     	
     	// While has children continue check/swap
-    	// 
     	// checkChildren returns size if heap
     	// property is valid, breaking while
     	while((2 * hole + 1) < size) {
