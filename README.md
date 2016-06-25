@@ -25,4 +25,9 @@
 	Worst case:      n²
 	Memory:			 1
 	- Uses last element in array as pivot
+	
+	Parallel Quicksort
+	Work: n log n
+	Span: log² n
+	Space: 1
 <img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="550" height="300" />
