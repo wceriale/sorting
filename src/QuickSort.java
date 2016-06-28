@@ -129,34 +129,6 @@ public class QuickSort {
             return i;
         }
 
-        // private int pickPivot() {
-        //     int rand = low + (int) (Math.random() * (high - low - 1));
-        //     return rand;
-        // }
-
-        // private void medianOf3() {
-        //     int high = this.high - 1;
-        //     int middle = (high + low)/2;
-        //     E hi = arr[high];
-        //     E lo = arr[low];
-        //     E mid = arr[middle];
-        //     if(comparator.compare(hi, lo) > 0) {       // hi > lo
-        //        if(comparator.compare(lo, mid) > 0) {   // hi > lo > mid
-        //            swap(low, middle);
-        //        } else if(comparator.compare(mid, hi) > 0) {  // mid > hi > lo
-        //            swap(middle, high);
-        //        }
-        //     } else {                                  // lo > hi
-        //         if(comparator.compare(hi, mid) > 0) { // lo > hi > mid
-        //             swap(low, high);
-        //             swap(low, middle);
-        //         } else {                         // lo > mid > hi
-        //             swap(low, high);
-        //         }
-        //     }
-            
-        //     swap(middle, high); 
-        // }
 
         private void swap(int x, int y) {
             E temp = arr[x];
