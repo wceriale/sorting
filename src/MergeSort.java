@@ -7,7 +7,7 @@ public class MergeSort {
 
 
     public static <E extends Comparable<E>> void sort(E[] array) {
-        HeapSort.sort(array, (x, y) -> x.compareTo(y));
+        MergeSort.sort(array, (x, y) -> x.compareTo(y));
     }
 
     public static <E> void sort(E[] array, Comparator<E> compare) {
