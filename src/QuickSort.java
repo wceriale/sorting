@@ -18,7 +18,7 @@ public class QuickSort {
     static final int SeqCutOff = 10000;
         
     public static <E extends Comparable<E>> void parallelSort(E[] array) {
-        QuickSort.paralllelSort(array, (x, y) -> x.compareTo(y));
+        QuickSort.parallelSort(array, (x, y) -> x.compareTo(y));
     }
 
     public static <E> void parallelSort(E[] array, Comparator<E> compare) {
@@ -93,7 +93,7 @@ public class QuickSort {
 
         public void compute() {
             if(high - low < SeqCutOff) {
-                ParallelQuickSort.quicksort(arr, low, high - 1);
+                QuickSort.quicksort(arr, low, high - 1);
             } else {
                 int pivot = partition();
                 ParallelSort left = new ParallelSort(arr, low, pivot);
