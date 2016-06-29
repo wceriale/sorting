@@ -1,7 +1,6 @@
 // William Ceriale
 
 import java.util.Comparator;
-import java.util.Arrays;
 
 
 public class MergeSort {
@@ -14,9 +13,12 @@ public class MergeSort {
 
     public static <E> void sort(E[] array, Comparator<E> compare) {
         comparator = compare;
+
+        // Store the sorted in temp array
         E[] result = mergesort(array);
-        // System.out.println(Arrays.toString(result));
-        // System.out.println(Arrays.toString(array));
+
+        // Hard copy every value over to memory location in
+        // passed array
         for(int i = 0; i < result.length; i++)
             array[i] = result[i];
     }
