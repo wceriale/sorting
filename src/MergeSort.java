@@ -23,8 +23,8 @@ public class MergeSort {
     		E[] arr2 = (E[]) new Object[arr.length - arr1.length];
     		for(int i = 0; i < arr1.length; i++) 
     			arr1[i] = arr[i];
-    		for(int i = arr1.length; i < arr.length; i++) 
-    			arr2[i] = arr[i];
+    		for(int i = 0; i < arr2.length; i++) 
+    			arr2[i] = arr[i + arr1.length];
     		mergesort(arr1, result);
     		mergesort(arr2, result);
     		merge(result, arr1, arr2);
