@@ -23,7 +23,7 @@ public class MergeSort {
     		E[] arr2 = (E[]) new Object[arr.length - arr1.length];
     		for(int i = 0; i < arr1.length; i++) 
     			arr1[i] = arr[i];
-    		for(int i = 0; i < arr2.length; i++) 
+    		for(int i = arr1.length; i < arr.length; i++) 
     			arr2[i] = arr[i];
     		mergesort(arr1, result);
     		mergesort(arr2, result);
@@ -36,7 +36,7 @@ public class MergeSort {
     	int arr2i = 0;
     	int index = 0;
     	while(arr1i < arr1.length && arr2i < arr2.length) {
-    		if(comparator.compare(arr1[arr1i], arr2[arr2i]) > 0) {
+    		if(comparator.compare(arr1[arr1i], arr2[arr2i]) < 0) {
     			arr[index] = arr1[arr1i];
     			arr1i++;
     		} else {
