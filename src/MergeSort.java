@@ -1,6 +1,8 @@
 // William Ceriale
 
 import java.util.Comparator;
+import java.util.Arrays;
+
 
 public class MergeSort {
 	static Comparator comparator;
@@ -12,12 +14,14 @@ public class MergeSort {
 
     public static <E> void sort(E[] array, Comparator<E> compare) {
         comparator = compare;
-        E[] result = (E[]) new Object[array.length];
-        mergesort(array, result);
-        array = result;
+        E[] result = mergesort(array);
+        // System.out.println(Arrays.toString(result));
+        // System.out.println(Arrays.toString(array));
+        for(int i = 0; i < result.length; i++)
+            array[i] = result[i];
     }
 
-    public static <E> void mergesort(E[] arr, E[] result) {
+    public static <E> E[] mergesort(E[] arr) {
     	if(arr.length > 1) {
     		E[] arr1 = (E[]) new Object[arr.length / 2];
     		E[] arr2 = (E[]) new Object[arr.length - arr1.length];
@@ -25,13 +29,15 @@ public class MergeSort {
     			arr1[i] = arr[i];
     		for(int i = 0; i < arr2.length; i++) 
     			arr2[i] = arr[i + arr1.length];
-    		mergesort(arr1, result);
-    		mergesort(arr2, result);
-    		merge(result, arr1, arr2);
+    		arr1 = mergesort(arr1);
+    		arr2 = mergesort(arr2);
+    		return merge(arr1, arr2);
     	}
+        return arr;
     }
 
-    public static <E> void merge(E[] arr, E[] arr1, E[] arr2) {
+    public static <E> E[] merge(E[] arr1, E[] arr2) {
+        E[] arr = (E[]) (new Object[arr1.length + arr2.length]); 
     	int arr1i = 0;
     	int arr2i = 0;
     	int index = 0;
@@ -57,6 +63,8 @@ public class MergeSort {
     		index++;
     		arr2i++;
     	}
+        //System.out.println(Arrays.toString(arr));
+        return arr;
     }
 }
 

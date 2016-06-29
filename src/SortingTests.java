@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class SortingTests {
-	public static final int ARR_SIZE = 30000000;
+	public static final int ARR_SIZE = 10;
 
 	public static void main(String[] args) {
 		Integer[] arr = new Integer[ARR_SIZE];
@@ -16,31 +16,32 @@ public class SortingTests {
 			arr4[i] = random;
 		}
 		// System.out.println(Arrays.toString(arr2));
-		System.out.println("Test 4. Ran with SeqCutoff of 10000");
-		testParallelQuickSort(arr);
-		testQuickSort(arr2);
+		// System.out.println("Test 4. Ran with SeqCutoff of 10000");
+		// testParallelQuickSort(arr);
+		// testQuickSort(arr2);
 		testMergeSort(arr3);
-		testHeapSort(arr4);
+		// testHeapSort(arr4);
 		// System.out.println(Arrays.toString(arr2));
 	}
 
-	public static void testParallelQuickSort(Integer[] arr) {
-		System.out.println();
-		System.out.println("Sorting Array of " + ARR_SIZE + " elements");
-		System.out.println("Array is sorted: " + isSorted(arr));
-		System.out.println("ParallelQuickSort sort used");
-		long timeBeforeSort2 = System.currentTimeMillis();
-		ParallelQuickSort.sort(arr);
-		long timeAfterSort2 = System.currentTimeMillis();
-		System.out.println("Array is sorted: " + isSorted(arr));
-		System.out.println("ParallelQuickSort took " + (timeAfterSort2 - timeBeforeSort2) + "ms");
-		System.out.println();
-	}
+	// public static void testParallelQuickSort(Integer[] arr) {
+	// 	System.out.println();
+	// 	System.out.println("Sorting Array of " + ARR_SIZE + " elements");
+	// 	System.out.println("Array is sorted: " + isSorted(arr));
+	// 	System.out.println("ParallelQuickSort sort used");
+	// 	long timeBeforeSort2 = System.currentTimeMillis();
+	// 	ParallelQuickSort.sort(arr);
+	// 	long timeAfterSort2 = System.currentTimeMillis();
+	// 	System.out.println("Array is sorted: " + isSorted(arr));
+	// 	System.out.println("ParallelQuickSort took " + (timeAfterSort2 - timeBeforeSort2) + "ms");
+	// 	System.out.println();
+	//}
 
 	public static void testQuickSort(Integer[] arr) {
 		System.out.println();
 		System.out.println("Sorting Array of " + ARR_SIZE + " elements");
 		System.out.println("Array is sorted: " + isSorted(arr));
+		System.out.println();
 		System.out.println("QuickSort sort used");
 		long timeBeforeSort2 = System.currentTimeMillis();
 		QuickSort.sort(arr);
@@ -68,9 +69,11 @@ public class SortingTests {
 		System.out.println("Sorting Array of " + ARR_SIZE + " elements");
 		System.out.println("Array is sorted: " + isSorted(arr));
 		System.out.println("MergeSort sort used");
+		System.out.println(Arrays.toString(arr));
 		long timeBeforeSort2 = System.currentTimeMillis();
 		MergeSort.sort(arr);
 		long timeAfterSort2 = System.currentTimeMillis();
+		System.out.println(Arrays.toString(arr));
 		System.out.println("Array is sorted: " + isSorted(arr));
 		System.out.println("MergeSort took " + (timeAfterSort2 - timeBeforeSort2) + "ms");
 		System.out.println();
