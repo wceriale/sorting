@@ -1,3 +1,5 @@
+THESE AREN'T ACTUALLY VALID.
+
 Test 1. Ran with SeqCutoff of 1 (Fully Parallel)
 
 Sorting Array of 30000000 elements
