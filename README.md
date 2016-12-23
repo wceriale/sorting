@@ -29,5 +29,5 @@
 	Parallel Quicksort
 	Work: nlog(n)
 	Span: log²(n)
-	Space: 1
+	Space: log(n)
 <img src="https://raw.githubusercontent.com/wceriale/sorting/master/images/Quicksort.png" width="550" height="300" />
