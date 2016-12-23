@@ -23,7 +23,7 @@
 	Single Pivot Quicksort
 	Average runtime: nlog(n)
 	Worst case:      n²
-	Memory:			 1
+	Memory:			 log(n)
 	- Uses last element in array as pivot
 	
 	Parallel Quicksort
